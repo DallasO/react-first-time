@@ -81,6 +81,7 @@ class Game extends React.Component {
     this.setState({
       stepNumber: step,
       xIsNext: (step % 2) === 0,
+      activeIndex: step,
     });
   }
 
@@ -97,7 +98,12 @@ class Game extends React.Component {
         '(' + step.row + '/' + step.col + ')' : '';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button
+            onClick={() => this.jumpTo(move)}
+            className={
+              this.state.activeIndex === move ? 'active' : ''
+            }
+          >{desc}</button>
           <label>{location}</label>
         </li>
       );
