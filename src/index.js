@@ -55,6 +55,7 @@ class Game extends React.Component {
       }],
       stepNumber: 0,
       xIsNext: true,
+      activeIndex: 0,
     };
   }
 
@@ -74,6 +75,7 @@ class Game extends React.Component {
       }]),
       stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
+      activeIndex: history.length,
     });
   }
 
