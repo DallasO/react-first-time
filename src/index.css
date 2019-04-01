@@ -46,6 +46,7 @@ ul {
   flex-direction: row;
 }
 
-.game-info {
+.game-info,
+.game-info ol li label {
   margin-left: 20px;
 }
