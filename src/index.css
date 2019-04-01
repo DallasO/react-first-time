@@ -33,6 +33,10 @@ ul {
   width: 34px;
 }
 
+.square.winner {
+  background: #f00;
+}
+
 .square:focus {
   outline: none;
 }
