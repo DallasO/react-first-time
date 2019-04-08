@@ -2,7 +2,7 @@
   "name": "react-first-time",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dallaso.github.io/react-first-time",
+  "homepage": "https://dallaso.github.io/react-first-time/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
